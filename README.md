@@ -53,5 +53,5 @@ Eğitim ve Verimlilik
 # Dokümantasyon
 Proje dokümantasyonuna aşağıdaki linklerden erişebilirsiniz:
 
-1.
+1. https://github.com/hediyesert/Planly/blob/main/Gereksinim-Analizi.md
 
