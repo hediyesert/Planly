@@ -54,4 +54,5 @@ Eğitim ve Verimlilik
 Proje dokümantasyonuna aşağıdaki linklerden erişebilirsiniz:
 
 1. [Gereksinim Analizi](https://github.com/hediyesert/Planly/blob/main/Hediye%20Sert/Gereksinim-Analizi.md)
+2. [REST API Tasarımı](API-Tasarimi.md)
 
