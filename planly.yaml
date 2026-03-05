@@ -1,6 +1,7 @@
 openapi: 3.0.3
 info:
   title: Planly API
+  version: 1.0.0
   description: |
     AI Destekli Çalışma Planlayıcısı için RESTful API.
     
@@ -9,20 +10,15 @@ info:
     - Sınav Türleri ve Konu Yönetimi
     - AI Destekli Çalışma Programı Üretimi
     - Çalışma Oturumları ve Görev Takibi
-  version: 1.0.0
   contact:
-    name: Planly Destek Ekibi
-    email: support@planly.com
-  license:
-    name: MIT
-    url: https://opensource.org/licenses/MIT
+    name: Hediye Sert
+    email: hediyeesert@gmail.com
 
 servers:
   - url: https://api.planly.com/v1
-    description: Production Server (HTTPS Zorunlu)
-  - url: https://staging-api.planly.com/v1
-    description: Staging Server
-
+    description: Üretim Sunucusu (Production)
+  - url: https://localhost:3000
+    description: Yerel Geliştirme Sunucusu
 tags:
   - name: auth
     description: Kimlik doğrulama işlemleri
@@ -36,6 +32,10 @@ tags:
     description: Çalışma oturumu yönetimi
   - name: tasks
     description: Görev yönetimi işlemleri
+
+security:
+  - BearerAuth: []
+
 
 paths:
   /auth/register:
