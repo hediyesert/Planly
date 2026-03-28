@@ -1,6 +1,8 @@
 .DS_Store
 scripts/.pillow/
+
 .venv/
+*.log
 
 backend/node_modules/
 backend/.env
