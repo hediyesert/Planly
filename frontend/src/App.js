@@ -6,7 +6,7 @@ import DashboardPage from "./pages/DashboardPage";
 import StudyWithFriendsPage from "./pages/StudyWithFriendsPage";
 import SettingsPage from "./pages/SettingsPage";
 import WeeklyAnalysisPage from "./pages/WeeklyAnalysisPage";
-import planlyLogo from "./assets/planly-brand-logo.png";
+import planlyBrandLogo from "./assets/planly-mark.png";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -66,7 +66,7 @@ function App() {
             <div className="app-navbar-inner">
               <div className="app-navbar-brand">
                 <img
-                  src={planlyLogo}
+                  src={planlyBrandLogo}
                   alt="Planly"
                   className="app-logo app-logo--nav"
                 />

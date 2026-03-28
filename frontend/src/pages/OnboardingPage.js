@@ -55,7 +55,13 @@ function OnboardingPage({ onNext }) {
   useEffect(() => {
     setLoadingExams(true);
     fetch(apiUrl("/api/exams"))
-      .then((res) => res.json())
+      .then(async (res) => {
+        const ct = res.headers.get("content-type") || "";
+        if (!res.ok || !ct.includes("application/json")) {
+          throw new Error(`Sınav listesi alınamadı: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data) => {
         const list = Array.isArray(data) ? data : [];
         setExamsData(list.map(normalizeExam).filter(Boolean));

@@ -95,11 +95,14 @@ body {
 
 .app-navbar-brand {
   flex-shrink: 0;
+  width: 52px;
+  height: 44px;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0;
-  border-radius: 0;
+  border-radius: 40% / 36%;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -117,11 +120,11 @@ body {
 }
 
 .app-logo--nav {
+  width: 100%;
+  height: 100%;
   display: block;
-  height: 46px;
-  width: auto;
-  max-width: min(200px, 40vw);
   object-fit: contain;
+  object-position: center;
 }
 
 .auth-page {
@@ -146,56 +149,68 @@ body {
     var(--pink-gray-page);
 }
 
-.auth-card .actions {
-  justify-content: center;
+.auth-card {
+  margin: 0 auto;
+  width: min(400px, 100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
 }
 
 .auth-logo-wrap {
-  align-self: center;
-  margin: 0 auto 18px;
+  width: min(260px, 88vw);
+  max-width: 100%;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  display: block;
+  border-radius: 34% / 28%;
   line-height: 0;
 }
 
 .auth-logo {
-  width: auto;
-  max-width: min(240px, 72vw);
+  width: 100%;
   height: auto;
-  max-height: 88px;
   display: block;
+  margin: 0;
   object-fit: contain;
 }
 
-.auth-title {
+.auth-lead {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
   text-align: center;
-  width: 100%;
-  align-self: center;
 }
 
-.auth-card .subtitle {
-  text-align: center;
+.auth-card-body {
   width: 100%;
-}
-
-.auth-card .field {
-  width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  text-align: left;
   box-sizing: border-box;
+}
+
+.auth-card-body .field {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-card-body .label {
   text-align: left;
 }
 
-.auth-card .label {
-  text-align: left;
-  display: block;
-}
-
-.auth-card .input {
+.auth-card-body .input {
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+}
+
+.auth-actions {
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .app-menu {
@@ -317,14 +332,9 @@ body {
   margin: 20px auto 0;
 }
 
-.card.card--small.auth-card {
-  width: min(440px, 100%);
+.card--small.auth-card {
+  width: min(400px, 100%);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: center;
-  box-sizing: border-box;
 }
 
 .title {

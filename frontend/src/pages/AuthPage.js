@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { apiUrl } from "../config";
-import planlyLogo from "../assets/planly-brand-logo.png";
+import planlyBrandLogo from "../assets/planly-mark.png";
 
 function AuthPage({ onNext }) {
   const [mode, setMode] = useState("login"); // "login" | "register"
@@ -51,14 +51,19 @@ function AuthPage({ onNext }) {
     <div className="auth-page">
       <div className="card card--small auth-card">
         <div className="auth-logo-wrap">
-          <img src={planlyLogo} alt="Planly" className="auth-logo" />
+          <img
+            src={planlyBrandLogo}
+            alt="Planly"
+            className="auth-logo"
+          />
         </div>
-        <h2 className="title auth-title">{mode === "login" ? "Giriş" : "Kayıt Ol"}</h2>
-        <div className="subtitle">
+        <p className="auth-lead">
           {mode === "login"
             ? "Devam etmek için e-posta ve şifreni gir."
             : "Yeni bir hesap oluşturmak için bilgilerini gir."}
-        </div>
+        </p>
+
+        <div className="auth-card-body">
 
         {mode === "register" && (
           <div className="field">
@@ -94,8 +99,9 @@ function AuthPage({ onNext }) {
         </div>
 
         {error && <div className="error">{error}</div>}
+        </div>
 
-        <div className="actions">
+        <div className="actions auth-actions">
           {mode === "login" ? (
             <button
               className="btn btn-primary"
