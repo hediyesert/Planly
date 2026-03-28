@@ -1,0 +1,8 @@
+# Railpack kök dizinde package.json aradığı için monorepolarda bazen "build plan" hatası verir.
+# Bu dosya bu serviste derlemeyi Dockerfile ile yapar (Root Directory: backend).
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "node server.js"
