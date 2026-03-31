@@ -1,6 +1,6 @@
 # Web Frontend Görev Dağılımı
 
-**Web Frontend Adresi:** [frontend.yazmuh.com](https://planly-subx.vercel.app)
+**Web Frontend Adresi:** [planly](https://planly-subx.vercel.app)
 
 ---
 
