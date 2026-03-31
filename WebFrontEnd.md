@@ -2,6 +2,11 @@
 
 **Web Frontend Adresi:** [frontend.yazmuh.com](https://planly-subx.vercel.app)
 
-------
+---
 
-1. [Hediye Sert'in Web Frontend Görevleri](Hediye Sert/Web-Frontend-Gorevleri.md)
+## Grup Üyelerinin Web Frontend Görevleri
+
+1. [Ali Tutar'ın Web Frontend Görevleri](Ali-Tutar/Ali-Tutar-Web-Frontend-Gorevleri.md)
+
+
+
