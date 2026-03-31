@@ -4,4 +4,4 @@
 
 ------
 
-1. [Hediye Sert'in Web Frontend Görevleri](Ali-Tutar/Ali-Tutar-Web-Frontend-Gorevleri.md)
+1. [Hediye Sert'in Web Frontend Görevleri](Hediye Sert/Web-Frontend-Gorevleri.md)
