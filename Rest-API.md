@@ -1,4 +1,4 @@
 # REST API Görev Dağılımı
 
-**REST API Adresi:** [backend.domain](https://planly-psi.vercel.app)
+**REST API Adresi:** [api.planly.com](https://planly-psi.vercel.app)
 
