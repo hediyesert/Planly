@@ -1,4 +1,4 @@
 # REST API Görev Dağılımı
 
-**REST API Adresi:** [api.yazmuh.com](https://api.yazmuh.com)
+**REST API Adresi:** [backend.domain](planly-psi.vercel.app)
 
