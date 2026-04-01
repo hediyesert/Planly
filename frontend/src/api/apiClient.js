@@ -3,7 +3,7 @@ import { getToken } from "../utils/storage";
 async function request(path, options = {}) {
   const headers = { "Content-Type": "application/json", ...options.headers };
   const token = getToken();
-  const baseURL="https://planly-gamma.vercel.app"
+  const baseURL="https://planly-gamma.vercel.app";
   if (token) headers.Authorization = `Bearer ${token}`;
   const res = await fetch(path, { ...options, headers });
   const text = await res.text();
