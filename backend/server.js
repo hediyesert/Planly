@@ -17,6 +17,17 @@ const io = new Server(server, {
   cors: { origin: process.env.CORS_ORIGIN || "*", methods: ["GET", "POST"] },
 });
 
+let dbReady = connectDB()
+  .then(() => seedExamData())
+  .catch((err) => {
+    console.error("DB init failed:", err);
+  });
+
+app.use(async (_req, _res, next) => {
+  await dbReady;
+  next();
+});
+
 setupApp(app, io);
 
 io.use((socket, next) => {
@@ -37,15 +48,12 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 5000;
 
-async function boot() {
-  await connectDB();
-  await seedExamData();
-  server.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server ${PORT} portunda çalışıyor`);
+if (require.main === module) {
+  dbReady.then(() => {
+    server.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server ${PORT} portunda çalışıyor`);
+    });
   });
 }
 
-boot().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = app;
