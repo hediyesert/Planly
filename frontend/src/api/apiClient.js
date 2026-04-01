@@ -1,9 +1,9 @@
 import { getToken } from "../utils/storage";
-
+const baseURL="https://planly-gamma.vercel.app";
 async function request(path, options = {}) {
   const headers = { "Content-Type": "application/json", ...options.headers };
   const token = getToken();
-  const baseURL="https://planly-gamma.vercel.app";
+  
   if (token) headers.Authorization = `Bearer ${token}`;
   const res = await fetch(path, { ...options, headers });
   const text = await res.text();
@@ -21,6 +21,7 @@ async function request(path, options = {}) {
 }
 
 export const api = {
+  
   register: (body) => request(baseURL+"/auth/register", { method: "POST", body: JSON.stringify(body) }),
   login: (body) => request(baseURL+"/auth/login", { method: "POST", body: JSON.stringify(body) }),
   examTypes: () => request(baseURL+"/exam-types"),
