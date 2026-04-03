@@ -5,7 +5,7 @@
 ---
 
 
-**Front-end Test Videosu:** [Link buraya eklenecek](https://example.com)
+**Front-end Test Videosu:** [Link buraya eklenecek](https://youtu.be/48Vvbra2PGo)
 
 
 ---
