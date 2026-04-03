@@ -5,7 +5,7 @@
 ---
 
 
-**Front-end Test Videosu:** [Link buraya eklenecek](https://youtu.be/48Vvbra2PGo)
+**Front-end Test Videosu:** [Planly Web Videosu](https://youtu.be/48Vvbra2PGo)
 
 
 ---
