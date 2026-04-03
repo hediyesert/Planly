@@ -4,6 +4,10 @@
 
 ---
 
+**Rest API Test Videosu:** [Rest API Youtube Videosu](https://youtu.be/zNCi-PGVzd0)
+
+---
+
 ## 1. Üye Olma
 - **Endpoint:** `POST /auth/register`
 - **Açıklama:** Yeni kullanıcı hesabı oluşturur.
