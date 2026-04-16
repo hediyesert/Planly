@@ -3,7 +3,7 @@ services:
     image: mongo:7
     container_name: planly-mongo
     ports:
-      - "27017:27017"
+      - "27018:27017"
     volumes:
       - planly-mongo-data:/data/db
     healthcheck:
